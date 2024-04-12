@@ -3,16 +3,16 @@
 ## WSL2 Setup
 ### Installation
 1. Run **Windows Terminal** as Administrator
-```pwsh
-wsl --install
-```
+  ```pwsh
+  wsl --install
+  ```
 3. Reboot
 4. Wait for the installation
 5. Enter Unix username & password
 6. Run cmd
-```bash
-sudo apt update && sudo apt upgrade -y
-```
+  ```bash
+  sudo apt update && sudo apt upgrade -y
+  ```
 8. Add wsl.config
 * [wsl.config](https://github.com/svngdo/dev-env-files/blob/master/wsl.config)
 
@@ -22,10 +22,10 @@ Installation:
 
 ### Fix Docker Permission Denied
 1. Add docker group
-```bash
-sudo groupadd docker
-```
+  ```bash
+  sudo groupadd docker
+  ```
 3. Add user to docker group
-```bash
-sudo usermod -aG docker <username>
-```
+  ```bash
+  sudo usermod -aG docker <username>
+  ```

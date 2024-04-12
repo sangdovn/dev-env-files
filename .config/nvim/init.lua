@@ -1,2 +1,2 @@
-require("configs.options")
-require("configs.keymaps")
+require("config.options")
+require("config.keymaps")

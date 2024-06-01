@@ -2,10 +2,17 @@
 [wsl2]
 
 # Limits VM memory to use no more than 4 GB, this can be set as whole numbers using GB or MB
-memory=2GB 
+memory=4GB
 
 # Sets the VM to use two virtual processors
 processors=2
 
 # Sets amount of swap storage space to 8GB, default is 25% of available RAM
-swap=2GB
+# swap=2GB
+
+[experimental]
+# Makes the WSL VM shrink in memory as you use it by reclaiming cached memory
+autoMemoryReclaim=gradual
+
+# Automatically shrinks the WSL virtual hard disk (VHD) as you use it
+sparseVhd=true
